@@ -72,7 +72,7 @@ include_dirs.append(join(src_top, "lib/hts_engine_API/hts_engine/src/include"))
 if platform_is_windows or platform_is_macos:
     extra_compile_args = []
 else:
-    extra_compile_args = ["--std=c++11"]
+    extra_compile_args = ["-std=c++11"]
 
 # Extension for sinsy
 ext_modules = [
